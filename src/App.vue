@@ -8,6 +8,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  created() {
+    this.$store.subscribe(mutation => {
+      console.log(mutation)
+    })
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
