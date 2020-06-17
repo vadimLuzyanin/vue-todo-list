@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 set -e
 
 npm run build
@@ -10,4 +12,4 @@ git commit -m 'deploy'
 
 git push -f git@github.com:vadimluzyanin/vue-todo-list.git master:gh-pages
 
-cd -
+cd - 
